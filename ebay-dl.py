@@ -92,7 +92,7 @@ def parse_price(text):
     >>> parse_price('$9.99')
     999
     '''
-    #space_index=text.find() dollar_index=text.find($) [text.find(), text.find($)]
+    
     price=''
     if '$' not in text:
         return 0
