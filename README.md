@@ -1,7 +1,17 @@
 # scraping-ebay
 
-### What does the ebay-dl.py file do?
-In this homework, I webscraped Ebay for key terms. This file searches for the name, price, status, shipping, number sold, and status of Ebay items. This was done through using `BeautifulSoup`. The output resulted in JSON files and CSV files.
+![Ebay Logo](https://cdn.dribbble.com/users/1857/screenshots/729847/attachments/69548/fitch-ebay-revision.png?compress=1&resize=400x300)
+
+### Overview
+In this homework, I learned how to webscrape! Our class webscraped Ebay for key terms. I chose the following terms:
+
+1. Haruki Murakami
+2. F1
+3. Peppa Pig
+
+
+## What does the ebay-dl.py file do?
+This file searches for the name, price, status, shipping, number sold, and status of Ebay items. By providing the file with a search term, it extracts all of those characteristics of the search term. This was done through using `BeautifulSoup`. The output resulted in JSON files and CSV files. If there is no entry for the term, then the dictionary still has the associated key, but the value is `None`.
 
 Things you may need to import:
     
@@ -15,23 +25,23 @@ Things you may need to import:
 
 I ran my file using the following commands to create json files: 
 
-    python3 ebay-dl.py 'haruki murakami'
+    $ python3 ebay-dl.py 'haruki murakami'
 
-    python3 ebay-dl.py 'peppa pig'
+    $ python3 ebay-dl.py 'peppa pig'
 
-    python3 ebay-dl.py 'f1'
+    $ python3 ebay-dl.py 'f1'
 
 The following commands can be run to create csv files:
 
-    python3 ebay-dl.py 'haruki murakami' --csv
+    $ python3 ebay-dl.py 'haruki murakami' --csv
 
-    python3 ebay-dl.py 'peppa pig' --csv
+    $ python3 ebay-dl.py 'peppa pig' --csv
 
-    python3 ebay-dl.py 'f1' --csv
+    $ python3 ebay-dl.py 'f1' --csv
     
 The general format is: 
 
-    python3 ebay-dl.py SEARCH_TERM
+    $ python3 ebay-dl.py SEARCH_TERM
     
 The csv file is generated through this argument:
 
